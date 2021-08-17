@@ -1,0 +1,45 @@
+.subscribe {
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    padding-bottom: 8.5rem;
+    border-bottom: 3px solid $blue-dark;
+    &__heading {
+        width: 50%;
+        font-size: 2rem;
+        color: $blue-dark;
+        max-width: 43rem;
+    }
+    &__info{
+        width: 50%;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 2.5rem;
+        background-color: #f2f1f6;
+        margin-bottom: 4rem;
+    }
+    &__input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        flex-grow: 1;
+        padding-right: 1.5rem;
+    }
+    &__btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 1.4rem;
+        color: $blue-dark;
+        font-weight: bold;
+
+    }
+    &__social i{
+        font-size: 2rem;
+        margin-left: 4rem;
+    }
+}

@@ -1,0 +1,38 @@
+.connect {
+    padding-bottom: 18rem;
+    &__heading {
+        text-align: center;
+        font-size: 4rem;
+        color: $blue-dark;
+        margin-bottom: 3rem;
+    }
+    &__notice {
+        text-align: center;
+        font-size: 2rem;
+        color: $blue-dark;
+        font-weight: 500;
+        span {
+            color: $yellow;
+        }
+        margin-bottom: 6.5rem;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        // align-items: stretch;
+    }
+    &__item {
+        width: calc(27rem - 2.4rem);
+    }
+
+    @media screen and (max-width: 1023px) {
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            padding-bottom: 2rem;
+        }
+    }
+    
+}

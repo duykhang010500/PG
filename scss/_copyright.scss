@@ -1,0 +1,18 @@
+.copyright {
+    border-top: 2px solid $gray-blur;
+    padding: 3rem 0 18rem;
+    display: flex;
+    &__col {
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+
+    &__link {
+        font-size: 1rem;
+        color: $blue-dark;
+        &:last-child {
+            padding-left: 2rem;
+        }
+    }
+}

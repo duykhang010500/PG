@@ -1,0 +1,41 @@
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+.header {
+    padding-top: 3rem;
+    @include flex(center, space-between);
+
+    &__logo {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    &__logo-text {
+        color: $yellow;
+    }
+
+    &__menu {
+        &-list {
+            @include flex(center);
+        }
+        &-item {
+            margin-left: 5rem;
+            &:last-child {
+                margin-left: 7rem;
+            }
+        }
+        &-link {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $gray;
+            transition: color 0.3s linear, border 0.3s linear;
+            &:hover {
+                color: $yellow;
+                border-color: currentColor;
+            }
+        }
+    }
+}

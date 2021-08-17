@@ -1,0 +1,25 @@
+.banner {
+    padding-top: 10rem;
+    padding-bottom: 18rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    &__heading {
+        margin-bottom: 3rem;
+        color: $blue-dark;
+        font-size: 7rem;
+        font-weight: 600;
+    }
+    &__desc {
+        font-size: 2rem;
+        color: $gray-blur;
+        margin-bottom: 4.5rem;
+    }
+
+    &__buttons {
+        font-size: 2rem;
+        .btn {
+            margin: 0 1rem;
+        }
+    }
+}
